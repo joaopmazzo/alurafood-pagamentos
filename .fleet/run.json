@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Pagamentos Build",
+            "type": "jps-build",
+            "module": "pagamentos",
+            "includeTests": false,
+        },
+        {
+            "name": "Pagamentos Run",
+            "type": "jps-run",
+            "dependsOn": ["Pagamentos Build"],
+            "mainClass": "br.com.alurafood.pagamentos.PagamentosApplication",
+            "module": "pagamentos",
+            "environment": {
+            },
+        }
+    ]
+}
